@@ -1,0 +1,32 @@
+//get operation
+query {
+  getUserById(id: "12") {
+    id
+    name
+    email
+    age
+    paymentMethod {
+      id
+      last4
+      expMonth
+      expYear
+    }
+  }
+}
+
+//post operation
+mutation {
+  createUser(id:"15", name: "Dude", age: 24, email: "dude23@email.com") {
+    id
+    name
+    email
+    age
+  }
+  createPaymentMethod(id: "6", userId: "15", last4: "6123", expMonth: 12, expYear: 2022) {
+    id
+    userId
+    last4
+    expMonth
+    expYear
+  }
+}
