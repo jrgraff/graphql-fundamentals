@@ -1,3 +1,4 @@
-/node_modules
-/dist
-.env
+/test_example/node_modules
+/test_example/dist
+/test_example/.env
+/school_example/node_modules
