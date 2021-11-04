@@ -14,6 +14,6 @@ conexao.connect(erro => {
   Tabelas.init(conexao)
 })
 
-app.listen(4000, () => {
+app.listen(3333, () => {
   console.log('Servidor rodando na porta 4000')
 })
